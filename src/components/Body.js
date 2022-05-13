@@ -49,9 +49,11 @@ export default function Body(){
     const [recalls, setRecalls] = React.useState(quest);
 
     function setState(index,state){
+        console.log(state);
         let newRecalls=[...recalls];
         newRecalls[index].state=state;
         setRecalls(newRecalls);
+        console.log(recalls);
     }
 
 
@@ -76,9 +78,10 @@ export default function Body(){
                 <img src="./images/logo.png" alt="ola"/>
                 <h1>ZapRecall</h1>
             </div>
-            {recalls.map((recall,index) => (<Card index={index} object={recall} setState={setState}/>))
+            {recalls.map((recall,index) => (<Card index={index} object={recall} setState={setState}/>
+            ))
             }
-            <Menu/>
+            <Menu recalls={recalls}/>
         </div>
         
     </>

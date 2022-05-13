@@ -59,7 +59,7 @@ body {
   position: fixed;
   left: 0;
   bottom:0;
-  height: 70px;
+  min-height: 70px;
   background-color: #FFFFFF;
   width: 100%;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
@@ -137,6 +137,7 @@ h4{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 4px;
 }
 .inicial{
     margin-top: 140px;
@@ -174,4 +175,34 @@ h5{
 }
 .hide {
     display: none;
+}
+
+.colorOrange{
+    color:orange;
+    text-decoration: line-through;
+}
+.colorGreen{
+  color:rgb(44, 139, 44);
+  text-decoration: line-through;
+}
+
+.colorRed{
+  color:red;
+  text-decoration: line-through;
+}
+ion-icon{
+    
+    width: 23px;
+    height: 23px;
+}
+ion-icon[name="close-circle"] {
+    color: #FF3030;
+}
+
+ion-icon[name="help-circle"] {
+    color: #FF922E;;
+}
+
+ion-icon[name="checkmark-circle"] {
+    color: #2FBE34;
 }

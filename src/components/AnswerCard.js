@@ -1,6 +1,7 @@
 export default function AnswerCard({ index, object, setState}) {
+
     return(
-        <div className="card beige column" onClick={()=>setState(index,"closed")}>
+        <div className="card beige column">
             <h2>{object.answer}</h2>
             <div className="row spaced">
                 <div className="red" onClick={()=>setState(index,"red")}> <h4>Não<br></br>lembrei</h4> </div>
