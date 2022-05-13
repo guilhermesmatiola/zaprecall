@@ -62,7 +62,6 @@ export default function Body(){
     function changeScreen() {
         setInicial("inicial hide");
         setApp("app");
-        // setHideResul("botDeck");
     }
 
 	return (
