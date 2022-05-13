@@ -54,17 +54,34 @@ export default function Body(){
         setRecalls(newRecalls);
     }
 
+
+
+    const [inicial, setInicial] = React.useState("inicial");
+    const [app, setApp] = React.useState("hide")
+
+    function changeScreen() {
+        setInicial("inicial hide");
+        setApp("app");
+        // setHideResul("botDeck");
+    }
+
 	return (
     <>
-      <div className="app">
-        <div className="topbar"> 
-          <img src="./images/logo.png" alt="ola"/>
-          <h1>ZapRecall</h1>
+        <div className={inicial}>
+                <img src="./images/logo.png" alt="" height='140px' width="160px"/>
+                <h1>ZapRecall</h1>
+                <div className="button" onClick={changeScreen}> <h5>Iniciar Recall!</h5></div>
         </div>
-        {recalls.map((recall,index) => (<Card index={index} object={recall} setState={setState}/>))
-        }
-      </div>
-      <Menu/>
+        <div className={app}>
+            <div className="topbar"> 
+                <img src="./images/logo.png" alt="ola"/>
+                <h1>ZapRecall</h1>
+            </div>
+            {recalls.map((recall,index) => (<Card index={index} object={recall} setState={setState}/>))
+            }
+            <Menu/>
+        </div>
+        
     </>
     );
 }

@@ -6,9 +6,9 @@ export default function Card({index, object, setState}) {
     if(object.state==="closed"){
         return(
             <>
-                <div className="card" onClick={()=>setState(index,"question")}>
+                <div className="card" >
                     <h2>Pergunta {index+1}</h2>
-                    <img className="vector" src="./images/Vector.png" alt="ola"/>
+                    <img className="vector" src="./images/Vector.png" alt="ola" onClick={()=>setState(index,"question")}/>
                 </div>
             </>
         );

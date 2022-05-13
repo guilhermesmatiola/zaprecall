@@ -138,3 +138,40 @@ h4{
     align-items: center;
     justify-content: space-between;
 }
+.inicial{
+    margin-top: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.inicial .button{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 246px;
+    height: 54px;
+    background: #FFFFFF;
+    border: 1px solid #D70900;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+h5{
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    
+    /* identical to box height */
+    text-align: center;
+    
+    color: #D70900;
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}

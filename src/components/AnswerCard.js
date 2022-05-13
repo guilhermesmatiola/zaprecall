@@ -9,4 +9,5 @@ export default function AnswerCard({ index, object, setState}) {
             </div>
         </div>
     )
-}          
+
+}
