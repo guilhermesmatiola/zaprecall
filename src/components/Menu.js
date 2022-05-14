@@ -34,22 +34,30 @@ export default function Menu({recalls, crasse, index}) {
 	return (
     <>
       <div className="bottombar">
+          <div className="column2">
+                <div className={correct} >
 
-                <div className={correct}>
-                    <img src="./images/party.png" alt="" />
-                    <h3>Parabéns</h3>
+                  <div className="allcorrect">
+                      <img className="emoji" src="./images/party.png" alt="" />
+                      <h3 className="bold">Parabéns!</h3>
+                  </div>
+      
+                      <h3>Você não esqueceu de <br></br> nenhum flashcard! </h3>
+                
                 </div>
 
                 <div className={wrong}>
-                    <img src="./images/sad.png" alt="" />
-                    <h3>errou</h3>
+                      <img src="./images/sad.png" alt="" />
+                      <h3>errou</h3>
                 </div>
 
-          <div classeName="column">
-                <h3>{arr.length}/8 concluidos</h3> 
-                {arr.map((name,index)=> (<ion-icon key={index} name={name}></ion-icon>
-                ))} 
-          </div>
+                <div classeName="column2">
+                      <h3>{arr.length}/8 concluidos</h3> 
+                      {arr.map((name,index)=> (<ion-icon key={index} name={name}></ion-icon>
+                      ))} 
+                </div>
+          </div>  
+
       </div>
     </>
   );

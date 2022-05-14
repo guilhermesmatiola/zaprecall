@@ -1,7 +1,10 @@
 * {
     box-sizing: border-box;
   }
-  
+::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+}
 h1{
     font-weight: 400;
     font-size: 36px;
@@ -137,7 +140,7 @@ h4{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 4px;
+    margin-bottom: 15px;
 }
 .inicial{
     margin-top: 140px;
@@ -205,4 +208,32 @@ ion-icon[name="help-circle"] {
 
 ion-icon[name="checkmark-circle"] {
     color: #2FBE34;
+}
+.column2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+.correct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.emoji{
+    margin-top: 5px;
+    display: flex;
+    margin-right: 4px;
+}
+.allcorrect{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.bold{
+    font-weight: bold;
 }
