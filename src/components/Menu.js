@@ -26,7 +26,7 @@ export default function Menu({recalls, crasse, index}) {
     useEffect(() => {
         if(arr.length === 8 && havered==false){
             setCorrect("show");
-        } if(arr.length !== 8 && recalls==8 && havered==true){
+        } if(arr.length === 8 && havered==true){
             setWrong("show");
         }
     });
@@ -47,8 +47,12 @@ export default function Menu({recalls, crasse, index}) {
                 </div>
 
                 <div className={wrong}>
-                      <img src="./images/sad.png" alt="" />
-                      <h3>errou</h3>
+
+                  <div className="allcorrect">
+                      <img className="emoji" src="./images/sad.png" alt="" />
+                      <h3 className="bold">Putz...</h3>
+                  </div>
+                      <h3>Ainda faltam alguns...<br></br>Mas não desanime!</h3>
                 </div>
 
                 <div classeName="column2">
