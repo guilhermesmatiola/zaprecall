@@ -56,8 +56,6 @@ export default function Body(){
         console.log(recalls);
     }
 
-
-
     const [inicial, setInicial] = React.useState("inicial");
     const [app, setApp] = React.useState("hide")
 
